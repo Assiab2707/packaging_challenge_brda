@@ -1,3 +1,3 @@
-def name_format(df_bikes):
-    df_bikes.columns=['Date','Time','GrandTotal','TotalDateAtTheHour', 'Unnamed','Remark']
+def name_format(df_bikes, name_col):
+    df_bikes.columns= name_col
     return df_bikes
