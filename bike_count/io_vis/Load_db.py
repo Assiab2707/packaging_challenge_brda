@@ -16,10 +16,11 @@ class Load_db:
   
   @staticmethod
   def save_as_df():
-    l= []
-    for i in range(len(path_target_json_tab)):
-      l.insert(i, pd.read_json(path_target_json_tab[i], lines=True))
-    return l
+    name_area = ['Alb','be',"c","d","e","f","g",'h','j','i']
+    dic_df = dict()
+    for i in range(len(name_area)):
+      dic_df[name_area[i]] = pd.read_json(path_target_json_tab[i], lines=True)
+    return dic_df
 
 def format_txt(path_target_txt, path_target_json):
   fh, abs_path = mkstemp()

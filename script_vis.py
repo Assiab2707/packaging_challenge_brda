@@ -3,43 +3,17 @@ import numpy as np
 import pandas as pd
 import datetime
 import matplotlib
+from datetimerange import DateTimeRange
 
 
-list_df = bc.Load_db_v().save_as_df()
+df_dic = bc.Load_db_v().save_as_df()
+date_begin_max = "0000/01/01"
+for key in df_dic: 
+    df_dic[key] = bc.drop_columns_useless(df_dic[key], ['laneId', 'location', 'id', 'type','vehicleType', 'reversedLane']).drop_duplicates("dateObserved").set_index(["dateObserved"]).sort_index(ascending=True)
+    date_begin_max = max(date_begin_max,df_dic[key].index[0])
 
-df_alb = bc.drop_columns_useless(list_df[0],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
-df_bera = bc.drop_columns_useless(list_df[1],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
-df_cell = bc.drop_columns_useless(list_df[2],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
-df_del1 = bc.drop_columns_useless(list_df[3],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
-df_del2 = bc.drop_columns_useless(list_df[4],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
-df_ger = bc.drop_columns_useless(list_df[5],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
-df_la1 = bc.drop_columns_useless(list_df[6],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
-df_la2 = bc.drop_columns_useless(list_df[7],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
-df_lav = bc.drop_columns_useless(list_df[8],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
-df_vp = bc.drop_columns_useless(list_df[9],['laneId', 'location', 'id', 'type',
-       'vehicleType', 'reversedLane'])
+df_dic = bc.format_date_all(df_dic,date_begin_max)
 
-
-print(len(df_vp))
-print(len(df_lav))
-print(len(df_la2))
-print(len(df_la1))
-print(len(df_ger))
-print(len(df_alb))
-print(len(df_cell))
-print(len(df_bera))
-print(len(df_del1))
-print(len(df_del2))
-
-print(df_bera)
+print(df_dic)
 
 
