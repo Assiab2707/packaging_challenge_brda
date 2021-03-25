@@ -19,7 +19,7 @@ path_target_json_la2 = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 
 url_db_la1 = "https://data.montpellier3m.fr/sites/default/files/ressources/MMM_EcoCompt_X2H20042635_archive.json"
 path_target_txt_la1 = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../data_vis", "data_txt", "lattes_1.txt")
-path_target_json_la1 = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../data_vis", "data_json", "lates1.json")
+path_target_json_la1 = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../data_vis", "data_json", "lattes1.json")
 
 url_db_vp = "https://data.montpellier3m.fr/sites/default/files/ressources/MMM_EcoCompt_X2H20063161_archive.json"
 path_target_txt_vp = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../data_vis", "data_txt", "vieille_poste.txt")
