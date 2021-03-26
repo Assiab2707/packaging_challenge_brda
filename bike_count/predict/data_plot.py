@@ -9,10 +9,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
 
-def histogram_plot(df_days):
+def histogram_plot(df_days, text):
     fig_total = plt.figure(figsize=(25, 5))
     plt.plot(df_days.index,df_days["TotalDays"])
-    plt.title("Représentation graphique des vélos par jour")
+    plt.title(text)
     plt.ylabel('Nombre de vélos')
     plt.xlabel('Date')
     plt.ylim(0,2600)
