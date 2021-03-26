@@ -9,7 +9,6 @@ from datetimerange import DateTimeRange
 df_dic = bc.Load_db_v().save_as_df_tab()
 df_coor = pd.DataFrame(columns=['nom','coordonnées'])
 
-
 date_begin_max = "0000/01/01"
 i=0
 for key in df_dic: 
