@@ -13,7 +13,7 @@ def format_date_all(df_dic, date_begin_max):
         df_dic[key] = df_dic[key][df_dic[key].index >= date_begin_max]
         for i in range(len(df_dic[key])):
             median = df_dic[key].median()
-            if (str(date[i])!=df_dic[key].index[i][0:10]+" " + df_dic['e'].index[0][11:19]):
+            if (str(date[i])!=df_dic[key].index[i][0:10]+" " + df_dic[key].index[0][11:19]):
                 df_dic[key].loc[str(date[i]).replace(' ','T')+'/'+str(date[i+1]).replace(' ','T')] = median
                 df_dic[key] = df_dic[key].sort_index(ascending=True)
     return(df_dic)
