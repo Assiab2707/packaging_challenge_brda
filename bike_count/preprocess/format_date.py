@@ -8,7 +8,7 @@ def format_date(df_bikes):
     return df_bikes
 
 def format_date_all(df_dic, date_begin_max):
-    date = pd.date_range(start='2021-01-06', end='2021-03-23')
+    date = pd.date_range(start='2021-01-06', end=str(pd.to_datetime('today').normalize()))
     for key in df_dic:
         df_dic[key] = df_dic[key][df_dic[key].index >= date_begin_max]
         for i in range(len(df_dic[key])):
@@ -17,3 +17,8 @@ def format_date_all(df_dic, date_begin_max):
                 df_dic[key].loc[str(date[i]).replace(' ','T')+'/'+str(date[i+1]).replace(' ','T')] = median
                 df_dic[key] = df_dic[key].sort_index(ascending=True)
     return(df_dic)
+
+def date_format_simple(df_bikes):
+    for i in range(len(df_bikes.index)):
+        df_bikes['date'][i]= df_bikes.index[i][0:10]
+    return df_bikes
