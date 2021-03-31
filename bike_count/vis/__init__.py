@@ -1,3 +1,3 @@
 import os
 
-path_target = 'result_vis.html'
+path_target = 'index.html'
