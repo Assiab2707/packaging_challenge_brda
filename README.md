@@ -11,7 +11,13 @@ Dans un terminal, vous pouvez cloner le répertoire dans votre machine locale :
 $ git clone https://github.com/Assiab2707/packaging_challenge_brda.git
 ```
 
+## Prédiction 
 
+Dans cette partie, il s'agissait de prédire le trafic de vélos à Montpellier le vendredi 02 Avril entre 00h et 09h. 
+
+L'url ci-dessous permet l'accès au compte-rendu sur le processus de prédiction : 
+
+METTRE URL
 
 
 ## Visualisation
