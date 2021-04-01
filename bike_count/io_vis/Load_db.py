@@ -12,7 +12,7 @@ class Load_db:
   def __init__(self, url=urldb_tab, target_name_txt=path_target_txt_tab,
                target_name_json=path_target_json_tab):
     for i in range(len(path_target_txt_tab)):
-      download(url[i], target_name_txt[i], replace=False)
+      download(url[i], target_name_txt[i], replace=True)
       self.format_txt(path_target_txt_tab[i], path_target_json_tab[i])
 
 

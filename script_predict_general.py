@@ -29,5 +29,4 @@ bc.sub_plot_days(df_days_mon, df_days_tues, df_days_wed, df_days_thur,
                  df_days_fri, df_days_sa, df_days_sun, "TotalDays", 2800)
 
 df_days_withoutwe = bc.subdf_withoutweekend(df_days)
-bc.histogram_plot(df_days_withoutwe, "Représentation graphique des vélos du \
-                                      lundi au vendredi", "TotalDays", 2800)
+bc.histogram_plot(df_days_withoutwe, "Représentation graphique des vélos du lundi au vendredi", "TotalDays", 2800)
