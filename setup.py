@@ -9,6 +9,7 @@ setup(
   author='Berrandou Assia',
   author_email='assia.berrandou@etu.umontpellier.fr',
   license='M1 MIND',
-  packages=['bike_count','bike_count.io_predict', 'bike_count.io_vis', 'bike_count.vis','bike_count.preprocess', 'bike_count.predict'],
+  packages=['bike_count', 'bike_count.io_predict', 'bike_count.io_vis',
+            'bike_count.vis', 'bike_count.preprocess', 'bike_count.predict'],
   zip_safe=False
 )

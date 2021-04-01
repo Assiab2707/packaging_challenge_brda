@@ -40,7 +40,15 @@ url_db_del2 = "https://data.montpellier3m.fr/sites/default/files/ressources/MMM_
 path_target_txt_del2 = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../data_vis", "data_txt", "delmas2.txt")
 path_target_json_del2 = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../data_vis", "data_json", "delmas2.json")
 
-urldb_tab=[url_db_alb,url_db_bera,url_db_cell,url_db_del1,url_db_del2,url_db_ger,url_db_la1,url_db_la2,url_db_lav,url_db_vp]
-path_target_txt_tab=[path_target_txt_alb,path_target_txt_bera,path_target_txt_cell,path_target_txt_del1,path_target_txt_del2,path_target_txt_ger,path_target_txt_la1,path_target_txt_la2,path_target_txt_lav,path_target_txt_vp]
-path_target_json_tab=[path_target_json_alb,path_target_json_bera,path_target_json_cell,path_target_json_del1,path_target_json_del2,path_target_json_ger,path_target_json_la1,path_target_json_la2,path_target_json_lav,path_target_json_vp]
-
+urldb_tab = [url_db_alb, url_db_bera, url_db_cell, url_db_del1, url_db_del2,
+             url_db_ger, url_db_la1, url_db_la2, url_db_lav, url_db_vp]
+path_target_txt_tab = [path_target_txt_alb, path_target_txt_bera, 
+                       path_target_txt_cell, path_target_txt_del1,
+                       path_target_txt_del2, path_target_txt_ger,
+                       path_target_txt_la1, path_target_txt_la2,
+                       path_target_txt_lav, path_target_txt_vp]
+path_target_json_tab = [path_target_json_alb, path_target_json_bera,
+                        path_target_json_cell, path_target_json_del1,
+                        path_target_json_del2, path_target_json_ger,
+                        path_target_json_la1, path_target_json_la2,
+                        path_target_json_lav, path_target_json_vp]
