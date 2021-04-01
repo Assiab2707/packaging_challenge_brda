@@ -13,11 +13,16 @@ $ git clone https://github.com/Assiab2707/packaging_challenge_brda.git
 
 ## Prédiction 
 
-Dans cette partie, il s'agissait de prédire le trafic de vélos à Montpellier le vendredi 02 Avril entre 00h et 09h. 
+Dans cette partie, il s'agissait de prédire le trafic de vélos à Montpellier le vendredi 02 Avril entre 00h et 09h. Les données sont disponibles sur :  **https://docs.google.com/spreadsheets/d/e/2PACX-1vQVtdpXMHB4g9h75a0jw8CsrqSuQmP5eMIB2adpKR5hkRggwMwzFy5kB-AIThodhVHNLxlZYm8fuoWj/pub?gid=2105854808&single=true&output=csv**
 
 L'url ci-dessous permet l'accès au compte-rendu sur le processus de prédiction : 
 
 METTRE URL
+
+### Sources :
+
+ - **https://towardsdatascience.com/machine-learning-polynomial-regression-with-python-5328e4e8a386**
+
 
 
 ## Visualisation
@@ -30,7 +35,7 @@ J'ai décidé de créer une visualisation intéractive. En effet, cette dernièr
 - possibilité de voir l'évolution du trafic sous forme de vidéo  
 - possibilité de changer la date à l'aide du TimeSlider
 
- De plus, en cliquant sur les différents marqueurs, on peut avoir accès au nombre de vélos étant passé à la date indiquée.
+ De plus, en cliquant sur les différents marqueurs, on peut avoir accès à l'intensité du trafic en ce lieu à la date indiquée.
 
 \
 L'url, ci-dessous, vous permet d'avoir accès à cette visualisation : 
@@ -38,6 +43,8 @@ L'url, ci-dessous, vous permet d'avoir accès à cette visualisation :
 **https://assiab2707.github.io/packaging_challenge_brda/**
 
 
+### Sources :
+  - **https://towardsdatascience.com/visualizing-nyc-bike-data-on-interactive-and-animated-maps-with-folium-plugins-c2d7645cd19b**
 
 
 

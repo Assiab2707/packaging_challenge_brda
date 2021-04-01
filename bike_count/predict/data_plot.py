@@ -14,8 +14,7 @@ def histogram_plot(df_days, text, col, ylim):
 def sub_plot_days(df_days0, df_days1, df_days2, df_days3, df_days4,
                   df_days5, df_days6, col, ylim):
     fig = plt.figure(figsize=(20, 10))
-    plt.suptitle('Représentation du nombre de vélo en fonction du jour de la \
-                  semaine')
+    plt.suptitle("Représentation de l'intensité du trafic en fonction du jour de la semaine")
     plt.subplots_adjust(left=0.04, right=0.96, top=0.93,
                         bottom=0.1, hspace=0.4)
 

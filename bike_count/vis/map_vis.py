@@ -63,5 +63,5 @@ def create_map(features, df_bikes):
 
 def color_legend(map, df_bikes):
     min_max = [min(df_bikes['intensity']), max(df_bikes['intensity'])]
-    linear = cmp.LinearColormap(['blue', 'purple', 'red'], vmin=min_max[0], vmax=min_max[1], caption='Nombre de vélo')
+    linear = cmp.LinearColormap(['blue', 'purple', 'red'], vmin=min_max[0], vmax=min_max[1], caption='Intensity')
     linear.add_to(map)

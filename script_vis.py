@@ -1,7 +1,6 @@
 import bike_count as bc
 import pandas as pd
 
-# https://towardsdatascience.com/visualizing-nyc-bike-data-on-interactive-and-animated-maps-with-folium-plugins-c2d7645cd19b
 
 df_dic = bc.Load_db_v().save_as_df_tab()
 date_begin_max = "0000/01/01"
