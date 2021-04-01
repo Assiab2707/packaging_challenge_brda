@@ -17,7 +17,7 @@ Dans cette partie, il s'agissait de prédire le trafic de vélos à Montpellier 
 
 L'url ci-dessous permet l'accès au compte-rendu sur le processus de prédiction : 
 
-**https://github.com/Assiab2707/packaging_challenge_brda/blob/19acf156c5fc5ea786d5b23162a22ecf7051d9a1/BERRANDOU_Assia_challenge.pdf**
+**https://github.com/Assiab2707/packaging_challenge_brda/blob/001222fd410e2d1959cd35bacaa9cb5083dddd7d/BERRANDOU_Assia_challenge.pdf**
 
 ### Sources :
 
