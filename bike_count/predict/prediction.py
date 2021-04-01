@@ -10,7 +10,7 @@ def non_linear_regression(regression_data):
     y = np.array(regression_data.TotalDateSinceMidnight)
     y = y[:, np.newaxis]
 
-    poly_reg = PolynomialFeatures(degree=7)
+    poly_reg = PolynomialFeatures(degree=6)
     X_poly = poly_reg.fit_transform(X)
     pol_reg = LinearRegression()
     pol_reg.fit(X_poly, y)
